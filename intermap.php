@@ -18,7 +18,6 @@
 
         function __construct($map) {
             $this->setMap($map);
-            return true;
         }
 
         public function setMap($map) {
