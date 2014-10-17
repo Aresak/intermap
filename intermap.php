@@ -23,13 +23,11 @@
         public function setMap($map) {
             $this->map = $map;
             $this->callMap = "#" . $map;
-            return true;
         }
 
         public function addAction($action_name, $action_script) {
             $this->actions[$action_name]["name"] = $action_name;
             $this->actions[$action_name]["script"] = $action_script;
-            return true;
         }
 
         public function addRegionAttr($region_id, $attr, $value) {
@@ -44,7 +42,6 @@
         public function addImage($id, $link) {
             $this->images[$id]["id"] = $id;
             $this->images[$id]["link"] = $link;
-            return true;
         }
 
         public function setRegions($regions) {
@@ -58,7 +55,6 @@
 
         public function setStyle($code) {
             $this->style = $code;
-            return true;
         }
 
         public function addRegion($region) {
@@ -109,7 +105,6 @@
                 }
                 echo "</map>";
 
-            return true;
         }
     }
 
